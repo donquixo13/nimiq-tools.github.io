@@ -148,7 +148,7 @@
                 $.consensus.addSubscriptions(Nimiq.Address.fromUserFriendlyAddress($("#recipientUserFriendly").val()))
                 $.mempool.on('transaction-added', async tx2 => {
                     if(tx.equals(tx2)) {
-                        alert("Transaction succesfully send.")
+                        alert("Transaction succesfully sent.")
                         $("#broadcastTransaction").prop("disabled", false)
                     }
                 })
